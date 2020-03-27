@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 01 Javascript</title>
+
+</head>
+<body>
+    
+    
+    
+    <!-- Inicia Javascript -->
+    <!-- <script src="prueba.js"></script> ejemplo de js referenciado -->
+    <script>
+        /* todo el contenido de nuestro js
+        Es un lenguaje interpretado que se basa en programación orientada a prototipos
+        Es sincreno,es decir que tiene una cadena de ejecucion secuenencial.
+        funciona del lado del cliente (usuario-navegador)
+        Debilmente tipado
+
+
+        variables
+        var,let y const
+        var--> declaramos una variable que sea de ámbito global.
+                en la actualidad es muy poco usada
+        let-->Declaramos una variavle de ámbito local
+        const-->Declaramos una constante.
+
+        tipos de Datos:
+            string -->text ej: let nombre = "Juan" // let edad = "10"
+            Number -> número ej: let edad = 10 
+            float -> decimales
+            boolean -> true o false ej: let activado = false
+
+
+        let nombre = null 
+
+
+        // pronpt -> nos provee una alerta con una caja de texto //Método windows
+        nombre = prompt("Ingrese su nombre");
+
+        //alert -> ventana p pop up con una indicacion o msj para el usuario
+        alert("Hola " + nombre);//windows alert
+      */
+
+
+      // Operadores arimenticos 
+
+
+    //   let x = 5;
+    //   let y = 2;
+
+    //   let suma = x + y;
+    //   console.log("La suma es:" + suma);
+
+
+      // Template Strings -> Ecm scrip 6 (ES6)
+    //   alert(`la suma es de : 
+    //             ${suma}`)
+
+    // resta = x - Y 
+    // multiplicacion =  x * y
+    // Division = x / Y
+    // Residuo = x % Y
+    // x++ -> se aumenta en un dato o ne un paso una variable
+    // x+2
+    // x-- -> se decrementa en un daro o en una paso 
+    // x-2
+
+    //Operadores de asignación / comparativos o relacionales 
+    //siempre devuelve un valor de tipo booleano
+    //  let x = 2;
+    //  let y = 3;
+
+    //  document.write('variable x: $(x) <br> variable y: $(y)');
+
+    //  let mayor = x>y;  //false
+    //  console.log(`mayor: ${mayor}`);
+    //  let mayorIgual = x>=y;
+    //  console.log(`mayor o igual: ${mayorIgual}`);
+    //  let menor = x<y;
+    //  console.log(`menor: ${menor}`);
+    //  let menorIgual = x<=y;
+    //  console.log(`menor o igual: ${menorIgual}`);
+    //  let igual = x==y;  // let igual -> 2 = 2 true
+    //  console.log(`igual - mismo valor: ${igual}`);
+    //  let igualExtricto = x===y;  // let igualEstrico -> 2 = "2" false
+    //  console.log(`igual estricto - mismo tipo de dato y mismo valor: ${igualEstricto}`);
+
+
+     /*
+        camel = Caso camello / Joroba de Camello
+        let nombreApellido = "Juan Quitian"; -Lower Case 
+        const PaisNacimiento - upperCases
+     */
+
+
+
+     // Operadores logicos 
+
+     let variable1 = false;
+     let $variable2 = true;
+     
+     //AND (y) simbolo ampersand &&
+    //  var resultadoAND = variable1&&$variable2; 
+    //  alert(`Resultado AND: ${resultadoAND}`);
+
+
+     //para comentar ctrol + K + C / ctrl + }
+     //para descomentar ctrl + K + u / ctrl + }
+
+      /* Ampersand &&
+      v && F = F
+      F && V = F
+      F && F = F
+      V && V = V
+      */
+      // OR (o) simple pipe || ->  
+      // let resultadoOR =  variable1&&$variable2;
+      // alert(`Resultado OR: ${resultadoOR}`);
+
+      /*
+      Pipe ||
+      V || F = V
+      F || V = V
+      V || V = V
+      F || F = F 
+      */
+
+
+      // Negación !
+      // let resultadoNOT = !variable1; // Esta declaración indica negacion de una variable 
+      // Let algo = variable1 = $variable2
+      // alert(`Resultado NOT: ${resultadoNOT}`);
+
+
+      /*
+      Estructura de control
+
+      permite al sistema trabajar con relacion a las decisiones o selecciones de un usuario 
+      se dividen en :
+      -selectiva (control if / else)
+      -múltiple (control Switch)
+      - Iterativas (For,While,Do While)
+      */
+
+
+      // Control de flujo if  (Estructura selectiva)
+      /*
+      Si la condición se cumple, se ejecutará una determinada sentencia.
+      Código spaguetti:Anidación de condicionales if / else
+      if(){
+        if(){
+          if(){
+
+          }
+        }
+      }
+      if (evaluacion){
+        bloque de código
+
+      }else{
+        segundo bloque de código
+      }
+    //   */
+    //  let respuesta = promt("Ingrese un número mayor a 5");  //Nos devuelve un tipo de dato String
+    //   // let numero1 = respuesta.parseInt(respuesta) / Number(respuesta) Parce In:de una dato a otro 
+
+    //  //if"5" > 5
+    //  if(respuesta > 5){
+    //    alert("Buen trabajo");
+    //    // Como estamos evaluando si el valor de respuesta es distinta a 6 (respuesta !=5) va a ejecutar el bloque 
+    //    if(respuesta == 6){
+    //     alert("Perfecto!!");
+    //    }else{
+    //      alert("Esperamos que número es 6");
+    //    }
+    //  }else{
+    //    alert("No es un número mayor a 5");
+    //  }
+
+
+    // switch (estructura seleccion múltiple)
+    
+    /*
+    Ejecuta cadena de sentaciaas siempre y cuenta la condición
+    se valide con los  casos especificadosmen nuestro flujo Switch
+    */
+
+
+    // let opcionUsuario = prompt("Ingrese un número del 1 al 3");
+
+    // switch(opcionUsuario){
+    //   case "1":
+    //       alert("Escogió el número 1");
+    //       break;
+    //     case "2":
+    //       alert("Escogió el número 2");
+    //       break;
+    //     case "3":
+    //       alert("Escogió el número 3");
+    //       break;
+    //     default:
+    //       alert("No es un número entre 1 y 3");
+    // }
+
+    // Bucle for (Estructura iterativas )
+      /*
+      Iteración de  los arreglos de datos 
+      Simplificar proceso 
+      Manejo de eventos 
+      Rapeticion de acciones n cantidad de veces
+      con  el sigo de for no sabemos con exactitud la cantidad de iteracibes que debe hacer el bucle 
+      y porder indicar en que momento debe salirse del siglo 
+
+      Iteración -> Aumento o decremento de un elemento (número de vueltas o veces que debe ejecutarse)
+      for (inicializacióon, condición, iteración){
+        bloque de código a ejecutar
+      }
+
+      i
+      j
+      k
+      */
+
+      // for (i = 0; i<=10; i++){
+      //   document.write(`Número: ${i} <br>`);
+      // }
+      
+      // //para multiplicar y secuencia 
+      // for (i = 0; i<=10; i++){
+      //   for(j = 0; i <=10 ; j--){
+      //     let tabla = i * J
+      //   }
+      // }
+        
+
+      //Bucle While 
+      /*
+      Mientras se cumpla una condición,entrará a ejecutar una determínada sentencia.
+
+      While (condicion){
+        se ejecuta bloque de código
+      }
+      */
+
+      // let i = 0;
+
+      // while(i<=10){
+      //   document.write(`Número: ${i} <br>`);
+      //   i++;
+      // }
+
+      // Arreglos
+       /* 
+        Variable que almacena gran cantidad de datos,estos datos se van
+        a manejar siempre desde la posición 0
+       */
+
+       let dias = ["lunes","martes","miercoles","jueves","viernes","sabado","domingo"];
+       for (i = 0; i<=dias.length-1;i++){
+        document.write(`${dias[i]} <br>`);
+       }
+    </script>
+</body>
+</html>

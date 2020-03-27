@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 03 - Bases JavaScript</title>
+</head>
+<body>
+    <script>  
+        /*
+        Do While (Estructura iterativa)
+        El bucle se ejecuta al menos una vez sin importar si se cumple o no 
+        la condición  que estamos evaluando
+        
+        do{
+            bloque de código
+        }While(condición)  
+     
+
+
+        let i = 0;
+
+        do{
+            i++;
+            document.write(`Número: ${i} <br>`);
+        }while(i<10);
+
+        */
+
+
+        /*
+        ---------Método o  funciones para Cadenas ------------------------
+        Objeto String
+        split
+        length
+        splice 
+        toLowerCase - convertir a cadena a minuscula
+        toUpperCase - convertir a cadena a mayuscula
+        join
+        concat
+        chartAt - Traer caracter especificado
+        trim - quitar espacios en blanco en los extremos
+        repeat
+        str
+        substr - Extraer una subcadena  desde una punto un hasta determinda cantidad de caracteres
+        lastIndexOf - Última posición de una caracter en especifico
+        indexOf - primer posición de un caracter en especifico
+        replace -  cambiar por otro tipo de caracter 
+
+        */
+
+
+        // let cadena = prompt("Ingresa un Frase");
+        // hola cómo estas 
+        // 0123456789
+        // document.write(`longitud de la cadena ${cadena.length}<br>`);
+        // document.write(`Texto en Mayusculas ${cadena.toLocaleUpperCase()}<br>`);
+        // document.write(`Texto en minúsculas ${cadena.toLocaleLowerCase()}<br>`);
+        // document.write(`Caracter en primer posición (1) ${cadena.charAt(1)}<br>`); // Cadenas de String es un arreglo
+
+        // let caracter = prompt("Escriba un caracter a buscar");
+        // document.write(`<hr> <br> Posición de letra: ${cadena.indexOf(caracter)}<br>`);
+        // document.write(` Posición de la útima letra: ${cadena.lastIndexOf(caracter)}<br>`);
+        // document.write(cadena.split("a")); // Siempre nos devuelve un arreglo
+
+
+        // Ejemplo 1 repeat
+        // let cadena = prompt("Ingresa un Frase");
+        // let resultado = cadena.repeat(2);
+        // document.write(resultado); 
+
+
+        // Ejemplo 2 substr
+        // let cadena = prompt("Ingresa un Frase");
+        // let resultado = cadena.substr(5);
+        // document.write(`<hr> <br>`);
+        // document.write(resultado);
+
+
+
+
+        /* 
+         ---------------------Métodos o funciones para arreglos --------------------------
+         join - contatenar a partir de un símbolo o un  caracter
+         concat - concatenar o unir dos o más arreglos
+         push - Agregar datos a un arreglo simpre los anexa en la última posición
+         splice - obtenemo una porción del arreglo
+         shift  - eliminar el dato que se encuentre en la posicion 0 
+         sort  - ordena un arreglo de mayor a menor
+         unshift - Agregar datos en la posición o
+         map (ES6) **
+         reverse -  Invertir el arreglo
+         pop -  Elimina el dato de la última posicion del arreglo
+         find
+        */
+
+        // let alfa1 =  ["A","B","C"];
+        // let alfa2 =  ["D","E","F"];
+        // let grupoA,
+        //     grupoB,
+        //     inverso;
+
+        // grupoA = alfa1.concat(alfa2);
+        // document.write(grupoA +"<br"); // console.log()
+
+        // grupoB  = grupoA.join("-");
+        // document.write(grupoB +"<br");
+
+        // grupoA.pop();
+        // document.write(grupoA +"<br");
+
+        // grupoA.push("G");
+        // document.write(grupoA +"<br");
+        
+        // grupoA.shift();
+        // document.write(grupoA +"<br");
+
+        // grupoA.unshift("Z");
+        // document.write(grupoA +"<br");
+
+        // inverso=grupoA.reverse();
+        // document.write(inverso) +"<br";
+
+
+        /*
+        Ejercicio
+        1) Pedir al usuario x cantidad de datos numericos. se deben discriminar los CaretPosition
+            que el usuario ingrese e imprimir únicamente en el html o en consola  los datos
+            distintos a cero.
+
+        2)Pedir al usuario que siempre x cantidad de datos.Estos pueden ser numericos 
+        o caracteres. Validar que al ser caracter ingrese unicamente el primer caracter de dicha cadena.u
+        Organizar los datos del usuario de menor a mayor 
+        empezando por las letras y luego por los numeros. 
+        
+        ej:
+        pepe
+        1
+        juan
+        carlos
+        10 
+        
+        
+        
+        */
+      /*
+    Ejercicio 1
+
+    
+      */
+    //  const numerosRequeridos=Number(prompt(Ingrese cantidad de numeros ));
+      
+    //  let numero = 0, numeros = [];
+    //  let i = 0;
+
+    //  while(i<numerosRequeridos){
+    //      numero=Number(prompt(`Ingrese su numero # ${i+1}`));
+    //      if(numero!=o){ 
+    //         numeros.push(numero);
+    //      }
+    //      i++;
+    //  }
+    //  document.write(`Discriminado los ceros de tus numeros ingresados`)
+
+    //  for(let i = 0; i < numeros.length;i++){
+    //      document.write(`<br>${numeros[i]}`);
+    //  }
+
+    //  numeros.forEach(function(num){
+    //      console.log(num);
+    //  });
+
+
+
+     //Ejercicio 2
+
+        
+
+    </script>
+</body>
+</html>
