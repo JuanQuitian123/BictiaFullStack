@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+	<title>Crear Boton</title>
+</head>
+
+<!-- <style>
+	body
+	{
+		background: #222;		
+	}
+	#contendor{
+		display: flex;
+		width: 100%;
+		max-width: 1000px;
+	}
+
+	#naruto{
+		width: 300px;
+		height: auto;
+		display: block;
+		border-radius: 8px;
+		box-shadow: 0px 0px 20px #999;
+
+	}
+	.botones{
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		width: 60px;
+		flex-wrap: wrap;
+		height: auto;
+		color: #999;
+		border-radius: 8px;
+		box-shadow: 0px 0px 20px #999;
+	}
+</style>
+<body> -->
+	<!-- <h1>#4</h1>
+	<div id="imagen">
+		<figure id="contenedor">
+			<img id="naruto" src="../imagenNaruto.jpg" alt="Naruto"> 
+		</figure>	
+	</div>
+	<p>
+		<button class="botones" type="button" onclick="zoomin()">Zoom up(+)</button>
+		<button class="botones" type="button" onclick="zoomout()">Zoom out(-)</button>
+	</p>
+	<script>
+		function zoomin(){
+			let miImagen=document.getElementById("naruto")
+			let currWidth=miImagen.clientWidth;
+			if(currWidth ==5000){
+				alert("Maximo Zomm");
+
+			}
+			else{
+				miImagen.style.width=(currWidth+40)+"px";
+			}
+		}
+
+		function zoomout(){
+			let miImag=document.getElementById("naruto");
+			let currWidth= miImag.clientWidth;
+			if(currWidth==40){
+				alert("Maximo Zoom Out");
+			}else{
+				miImag.style.width=(currWidth-40)+"px";
+			}
+
+		}	
+	</script> -->
+
+
+	<!-- <h1># 3 Selecciona el color que más te guste</h1>
+<div class="box">
+	<a onclick="changecolor('red')" id="red">#e74c3c</a>
+	<a onclick="changecolor('blue')" id="blue">#3498db</a>
+	<a onclick="changecolor('green')" id="green">#2ecc71</a>
+	<a onclick="changecolor('gray')" id="gray">#34495e</a>
+	<a onclick="changecolor('yellow')" id="yellow">#f1c40f</a>
+	<a onclick="changecolor('orange')" id="orange">#e67e22</a>
+</div>
+<style>
+	body{
+		margin: 0;
+		padding: 0;
+		background: #344953;
+	}
+
+	.box{
+		position: absolute;
+		top: 40px;
+		right: 40px;
+		padding: 5px;
+		background: #f1f1f1;
+	}
+
+	.box a{
+		width: 40px;
+		height: 40px;
+		float: left;
+		text-indent: -9999px;
+		margin: 5px;
+		cursor: pointer;
+	}
+	#red{
+		background: #e74c3c;
+	}
+	#blue{
+		background: #3498db;
+	}
+	#green{
+		background: #2ecc71;
+	}
+	#gray{
+		background: #34495e;
+	}
+	#yellow{
+		background: #f1c40f;
+	}
+	#orange{
+		background: #e67e22;
+	}
+</style>
+<script>
+	function changecolor(id){
+		document.body.style.background = document.getElementById(id).innerHTML;
+	}
+</script> -->
+	
+
+<!-- Punto # 1 ----------------------- -->
+<!-- 
+
+<body>
+	<div id="video_player_box">
+	<video id="my_video" width="550" height="320" autoplay src="../y2mate.com - Jiren Derrota a Maji Kayo con un Golpe_xD2UbVPYink_360p.mp4">
+		<source src="../y2mate.com - Jiren Derrota a Maji Kayo con un Golpe_xD2UbVPYink_360p.mp4">
+	</video>
+	
+	<div id="video_controls_bar">
+		<button id="playpausebtn">Pause</button>
+		<input id="seekslider" type="range" min="0" max="100" value="0" step="1">
+		<span id="curtimetext">00:00</span> / <span id="durtimetext">00:00</span>
+	  </div>
+	</div>
+	<style>
+		#video_controls_bar{
+			background: #332;
+			padding: 10px;
+		}
+		#video_player_box{ width:550px; background:#000; margin:0px auto;}
+	</style>
+<script>
+	var vid, playbtn, seekslider, curtimetext, durtimetext;
+	function intializePlayer(){
+		// Set object references
+		vid = document.getElementById("my_video");
+		playbtn = document.getElementById("playpausebtn");
+		seekslider = document.getElementById("seekslider");
+		curtimetext = document.getElementById("curtimetext");
+		durtimetext = document.getElementById("durtimetext");
+		// Add event listeners
+		playbtn.addEventListener("click",playPause,false);
+		seekslider.addEventListener("change",vidSeek,false);
+		vid.addEventListener("timeupdate",seektimeupdate,false);
+	}
+	window.onload = intializePlayer;
+	function playPause(){
+		if(vid.paused){
+			vid.play();
+			playbtn.innerHTML = "Pause";
+		} else {
+			vid.pause();
+			playbtn.innerHTML = "Play";
+		}
+	}
+	function vidSeek(){
+		var seekto = vid.duration * (seekslider.value / 100);
+		vid.currentTime = seekto;
+	}
+	function seektimeupdate(){
+		var nt = vid.currentTime * (100 / vid.duration);
+		seekslider.value = nt;
+		var curmins = Math.floor(vid.currentTime / 60);
+		var cursecs = Math.floor(vid.currentTime - curmins * 60);
+		var durmins = Math.floor(vid.duration / 60);
+		var dursecs = Math.floor(vid.duration - durmins * 60);
+		if(cursecs < 10){ cursecs = "0"+cursecs; }
+		if(dursecs < 10){ dursecs = "0"+dursecs; }
+		if(curmins < 10){ curmins = "0"+curmins; }
+		if(durmins < 10){ durmins = "0"+durmins; }
+		curtimetext.innerHTML = curmins+":"+cursecs;
+		durtimetext.innerHTML = durmins+":"+dursecs;
+	}
+	</script>
+</body> -->
+
+<body>
+	punto 3 del taller 2 semana 
+	<section id="menu">
+		<button id="btn1">Agregar</button>
+		<button id="btn2">Eliminar</button>
+		<button id="btn3">Eliminar pareces</button>
+		<button id="btn4">Eliminar en especifico</button>
+	</section>
+
+	<section id="contenedor">
+
+	</section>
+
+</body>
+
+<script>
+	let parent = document.getElementById('contenedor');
+	let element =document.getElementsByTagName('div');
+	let contador = 1;
+
+	//boton de crear divs
+	document.getElementById('btn1').addEventListener('click',function(){
+		let nuevoDiv = document.createElement('div');
+		let txt = document.createTextNode(contador);
+		nuevoDiv.appendChild(txt);  // credao con valor
+		parent.appendChild(nuevoDiv); // Agregar al padre
+		contador = contador + 1; // contador ++  = contador +1
+
+	})
+
+	// Boton eliminer los divs
+	document.getElementById('btn2').addEventListener('click',function(){
+		//opciones para elimiar divs
+		//parent.remove()
+		// for + removeChild()
+		//for (i = 0; i<divs.lenght; i++){
+			// let hijos  = document.getElementById(element[i]) un opcion 
+			// parent.removeChild(element); otra opcion
+			while(parent.firstChild){
+				parent.removeChild(parent.firstChild)
+			}
+			contador = 1;
+	})
+
+	// Boton eliminar impares _saber si el div es par o impar
+	document.getElementById('btn3').addEventListener('click',function(){
+		// Recorrer todos los  divs que existen
+		for(i =0; i < element.length;i++){
+			// Validar si es par o impar 
+			if(element[i]%2 != 0){
+				element[i].remove();
+			}
+		}
+	})
+</script>
+
+
+<!-- <script>
+	// Pedirle los nombre al usuario
+	let lista = new Array; //let lista = [];
+	let nombre ;
+	 // El ciclo decia salirse de la ejuecución cuando  existiese un espacio 
+	  do{
+		  nombre = prompt ('Ingrese un nombre');
+		  // Validar si el valor del prompt es vacío para agregatr el dato al arreglo
+		  if(nombre !=""){ 
+			  // Validar de nombre repetido
+			  if(lista.includes(nombre) === false){
+				lista.push(nombre);
+				/*
+				shift + alt + a
+				for (i = 0; i <= lista.lenht;i++){
+					if(nombre ==  lista [i]){
+
+					}else{
+						lista.push(nombre)
+					}
+				}
+				*/
+			  }else{
+				alert("El nombre ya existe, por favor ingresar otro");
+			  }
+
+		  }else{
+			alert('Lista completada');
+		  }
+	  }while(nombre !="")
+	  console.log(lista.sort());
+</script> -->
+</html>
