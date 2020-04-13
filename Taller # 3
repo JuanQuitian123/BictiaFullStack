@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Taller # 3 </title>
+</head>
+<body>
+    
+<!-- 
+    <script>
+        //----------- Punto 1     taller # 3
+      let numero =Number(prompt('Ingrese el numero que desea saber si positivo o negativo'));
+
+        if(numero > 0){
+            alert('El '+numero +' es numero es positivo ');
+        }
+            alert('El ' + numero +' es negativo ');
+
+
+
+    <script/>
+ */ -->
+
+
+
+     <!-- //----------- Punto 2 taller # 3 -->
+    
+     
+<!-- <body onload="iniciar()">  
+     <p>Horas: <span id="horas"> 00</span> Minutos: <span id="minutos">00</span> Segundos: <span id="segundos">00</span></p>
+        <script>
+            var cronometro;
+            function iniciar (){
+                let h = 0;
+                let m = 0;
+                let s = 0;
+
+                let hp = document.getElementById("horas");
+                let mp = document.getElementById("minutos");
+                let sp = document.getElementById("segundos");
+
+
+                cronometro= setInterval(function(){
+                    if(s== 60){
+                        s = 0;
+                        m++;
+                        mp.innerHTML = m;
+                        if(m < 1){
+                            mp.innerHTML = "0" + m;
+                        }
+                        if(m == 60){
+                            m = 1;
+                            h++;
+                            hp.innerHTML = h;
+                            if(h < 1){
+                            hp.innerHTML = "0" + h;
+                        }
+                        }
+                    }
+                    s++
+                    sp.innerHTML =s;
+                    if(s< 10){
+                            sp.innerHTML = "0" + s;
+                        }
+                },100)
+            }
+        </script>
+
+
+</body> -->
+
+
+ 
+     <!-- //----------- Punto 3    taller # 3 -->
+
+    <!--
+
+     <div id="cronometro">
+         <span id="minutos">00</span>: <span id="segundos">00</span>
+     </div>
+<script>
+    function startime(){ 
+
+        segundos = 0;
+    s = document.getElementById("segundos");
+    m = document.getElementById("minutos");
+
+    cronometro = setInterval(function(){
+        segudos++
+
+        secs=segundos;
+        mins = 0;
+        while(secs>=60){
+            mins++;
+            secs-=60;
+        }
+
+        s.innerHTML = secs;
+        m.innerHTML = mins;
+    },1000);
+    }
+</script> -->
+
+
+
+
+<!-- //----------- Punto 4     taller # 3  ------> 
+
+<!-- 
+
+<script>
+
+    let palabraIntroducida = prompt("Introduzca una palabra o texto");
+    let aCont= 0; 
+    let eCont= 0;
+    let iCont= 0;
+    let oCont= 0;
+    let uCont= 0;
+    let otrosCont = 0;
+
+
+    for (var i = 0 ; i < palabraIntroducida.length ; i++) {
+
+
+        switch(palabraIntroducida.charAt(i)) {
+
+            case "a":
+            aCont++;
+            break;
+
+            case "e":
+            eCont++;
+            break;
+
+            case "i":
+            iCont++;
+            break;
+
+            case "o":
+            oCont++;
+            break;
+
+            case "u":
+            uCont++;
+            break;
+
+            default:
+            otrosCont++;
+            break;
+
+        }
+
+    }
+
+
+    document.write("Resumen de palabras ingresadas "+"<br>" + "A: " + aCont + "<br>E: " + eCont + "<br>I: " + iCont + "<br>O: " + oCont + "<br>U: " + uCont + "<br>Otras letras, numeros o caracteres: " + otrosCont);
+    
+
+</script>
+  -->
+  
+  
+  <!-- //----------- Punto 5      taller # 3  ------> 
+
+<!-- <script>
+    function Area(){  
+    let area,base;
+        base = prompt("Coloque el lado del cuadrado ");
+
+        base = parseInt(base);
+        area = (base * base);
+
+        alert("El area del cuadrado es : " +  area );
+
+    }
+
+    function Rectangulo(){  
+    let area0,base0,altura0;
+        base0 = prompt("Coloque la base del rectángulo");
+        altura0 = prompt("Coloque la altura del rectángulo");
+
+        base0 = parseInt(base0);
+        altura0 = parseInt(altura0);
+        area0 = (base0 * altura0);
+
+        alert("El area del rectángulo es : " +  area0 );
+
+    }
+
+
+    function Triangulo(){  
+    let area1,base1,altura1;
+        base1 = prompt("coloque la base del triangulo");
+        altura1 = prompt("Coloque la altura del triangulo");
+
+        base1 = parseInt(base1);
+        altura1 = parseInt(altura1);
+        area1 = ((base1 * altura1)/2);
+
+        alert("El area del Triangulo es : " +  area1 );
+
+    }
+
+
+    function circulo(){  
+    let area2,radio,pi;
+        radio = parseFloat(prompt("coloque el radio del circulo"));
+        pi = Math.PI;
+
+        area2 = pi * Math.pow(radio,2);
+
+        alert("El area del circulo es : " +  area2 );
+
+    }
+
+
+</script>
+<form action="forml">
+    <h1>Calcular area de un Cuadrado</h1>
+    <input type="button" value="Cuadrado" onclick="Area()">
+</form>
+<form action="forml">
+    <h1>Calcular area de un rectángulo</h1>
+    <input type="button" value="rectángulo" onclick="Rectangulo()">
+</form>
+  
+<form action="forml">
+    <h1>Calcular area de un Triangulo</h1>
+    <input type="button" value="Triangulo" onclick="Triangulo()">
+</form>
+
+<form action="forml">
+    <h1>Calcular area de un Circulo</h1>
+    <input type="button" value="Circulo" onclick="circulo()">
+</form>
+   -->
+
+
+
+   <!-- //----------- Punto 6     taller # 3  ------>  
+   
+   
+   <!-- //----------- Punto 7    taller # 3  ------>  
+<!--    
+<script>
+  let multiplos = 8;
+
+do{
+    document.write("Este es el numero :  "+ multiplos+"<br/>");
+    multiplos+=8;
+}while(multiplos<= 500);
+    alert("“Lo sentimos, no existe un número 500 que sea múltiplo de 8”");
+</script>
+   
+     -->
+
+
+        <!-- //----------- Punto 8   taller # 3  ------>
+
+        <script>
+            var f,c;
+            // figura A
+
+            document.write("figura A" + "<br>");
+
+            for (f=1;f<=4;f++)
+            {
+                for(c=1;c<=f;c++)
+                    document.write("*");
+                document.write("<br>");
+            }
+            for (f=5;f>=1;f--)
+            {
+                for(c=1;c<=f;c++)
+                    document.write("*");
+                document.write("<br>");
+            }
+            document.write("<br>");
+            // Figura B
+
+            document.write("figura B" + "<br>");
+            for (f=5;f>=1;f--)
+            {
+                for(c=1;c<=f-f;c++)
+                    document.write("&nbsp&nbsp");
+                for(c=1;c<=f;c++)
+                    document.write("*");
+                document.write("<br>");
+            }
+            for (f=1;f<=5;f++)
+            {
+                for(c=1;c<=0;c++)
+                    document.write("&nbsp&nbsp");
+                for(c=1;c<=f;c++)
+                    document.write("*");
+                document.write("<br>");
+            }
+            document.write("<br>");
+            // Fifura C-----------------
+
+
+            document.write("figura C" + "<br>");
+        let fila= prompt("Ingresa un número para figura C");
+
+              for (f=fila;f>=1;f--)
+            {
+                for(c=1;c<=f-f;c++)
+                    document.write("&nbsp&nbsp");
+                for(c=1;c<=f;c++)
+                    document.write("*");
+                document.write("<br>");
+            }   
+
+        </script>
+</body>
+</html>
